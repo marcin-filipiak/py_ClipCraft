@@ -19,7 +19,6 @@ def download_data(url, output_file, start_time=None, end_time=None):
 	print('Wait, I am downloading...')
 
 	yt = YouTube(url)
-	webbrowser.open(url)
 	video_stream = yt.streams.filter(progressive=True).filter(file_extension='mp4').filter(res='720p').first()
 	video_stream.download(filename='t_'+output_file)
 	print('Video downloaded.')
