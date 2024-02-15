@@ -26,11 +26,14 @@ Clean-up:
 
 ## How to Run:
 
-Open a terminal.
-Run the script using the following command:
+* Open a terminal.
+* Add law to execute:
+`chmod +x ClipCraft.py`
+* Run the script using the following command:<br>
+`python3 ClipCraft.py url output_file [--start_time HH:MM:SS] [--end_time HH:MM:SS]`<br>
+example:<br>
+`python3 ClipCraft.py https://www.youtube.com/watch?v=dQw4w9WgXcQ rick.mp4 --start_time 00:01:00 --end_time 00:01:10`
 
-`python3 script_name.py url output_file [--start_time HH:MM:SS] [--end_time HH:MM:SS]`
-
-Replace script_name.py with the actual script name, url with the YouTube video URL, output_file with the desired output file name, and optional --start_time and --end_time for specifying the segment.
+ClipCraft.py is a script name, url with the YouTube video URL, output_file with the desired output file name, and optional --start_time and --end_time for specifying the segment.
 
 Note: Ensure that you have the necessary dependencies (pytube and moviepy) installed before running the script.
